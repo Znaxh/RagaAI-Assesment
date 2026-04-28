@@ -1,4 +1,4 @@
-import { BarChart2, Bell, LayoutDashboard, Users, X } from "lucide-react";
+import { BarChart2, LayoutDashboard, Users, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { useAuthStore } from "../../store/authStore";
 import { useUiStore } from "../../store/uiStore";

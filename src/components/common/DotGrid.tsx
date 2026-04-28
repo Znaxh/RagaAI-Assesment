@@ -20,12 +20,19 @@ export const DotGrid = memo(function DotGrid({
   inactiveColor = "#1E2A3A",
 }: DotGridProps) {
   return (
-    <div className="flex flex-wrap gap-1 md:grid md:gap-1" style={{ gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }}>
+    <div
+      className="grid"
+      style={{
+        gridTemplateColumns: `repeat(${cols}, ${dotSize}px)`,
+        gap,
+      }}
+    >
       {Array.from({ length: total }).map((_, index) => (
         <span
           key={index}
-          className="h-2 w-2 md:h-[10px] md:w-[10px]"
           style={{
+            width: dotSize,
+            height: dotSize,
             background: index < filled ? activeColor : inactiveColor,
           }}
         />

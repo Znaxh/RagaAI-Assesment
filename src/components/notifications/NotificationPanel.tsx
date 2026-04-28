@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useUiStore } from "../../store/uiStore";
 import { useClickOutside } from "../../hooks/useClickOutside";
 import { useState } from "react";
-import { Trash2, RotateCcw, Check, X } from "lucide-react";
+import { Trash2, RotateCcw, Check } from "lucide-react";
 
 export function NotificationPanel({ open, onClose }: { open: boolean; onClose: () => void }) {
   const { notifications, trash, markAsRead, markAsUnread, moveToTrash, restoreFromTrash, markAllAsRead, clearAll, emptyTrash } = useUiStore();

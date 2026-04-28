@@ -23,6 +23,20 @@ export default function DashboardPage() {
         label="ADMISSION_TIMELINE"
         value={analyticsData.totalPatients}
         sublabel="ADMISSIONS TODAY"
+        rightContent={
+          <div className="min-w-[260px]">
+            <ScanTimeline
+              startTime="00:00:00"
+              endTime="00:24:12"
+              currentTime="08:14.329"
+              isScanning
+              markers={[
+                { start: 28, end: 42, color: "#C49A2A" },
+                { start: 58, end: 75, color: "#3B6FD4" },
+              ]}
+            />
+          </div>
+        }
       />
       <Button onClick={simulateCriticalAlert}>[ ⚠ TRIGGER_TEST_ALERT ]</Button>
       <div className="grid grid-cols-1 gap-6 xl:grid-cols-5">
