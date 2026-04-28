@@ -1,5 +1,4 @@
-# HEALTH_OS // CLINICAL INTELLIGENCE PLATFORM
-# ============================================
+
 # Frontend Assessment — B2B Healthcare SaaS
 
 ## OVERVIEW // SYSTEM BRIEF
@@ -54,21 +53,22 @@
    - `VITE_FIREBASE_PROJECT_ID`
    - `VITE_FIREBASE_APP_ID`
 
-## DEMO ACCESS // CREDENTIALS
-- `demo@healthcare.com`
-- `Demo@1234`
-
 ## FEATURE CHECKLIST // STATUS
 - [x] Dark terminal-style design system (global CSS variables)
 - [x] Protected routes with auth-gated app shell
-- [x] Dashboard hero cards with DotGrid + ScanTimeline
+- [x] Dashboard hero cards with DotGrid + responsive layouts
 - [x] Analytics charts (line, area, bar, donut)
 - [x] Patient explorer with grid/list toggle + modal
 - [x] Service worker registration + notification permission flow
 - [x] Alert simulation trigger and notification panel
 - [x] Lazy loaded pages + suspense fallback
-- [ ] Backend API integration (currently mock data)
-- [ ] Full E2E suite and visual regression snapshots
+- [x] Mobile responsiveness with drawer-style sidebar
+- [x] Full E2E suite and visual regression snapshots (Playwright)
+
+## DEMO ACCESS // CREDENTIALS
+- `demo@healthcare.com`
+- `Demo@1234`
+
 
 ## FOLDER STRUCTURE // MAP
 ```text
